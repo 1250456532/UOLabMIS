@@ -17,8 +17,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @Author 杨佳雨
- * @Version 1.0
+ * @author 杨佳雨
+ * @version 1.0
  */
 public class LabmemberDaoImpl implements LabmemberDao {
     /**

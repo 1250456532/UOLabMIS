@@ -9,8 +9,8 @@ import java.io.File;
 import java.util.List;
 
 /**
- * @Author 杨佳雨
- * @Version 1.0
+ * @author 杨佳雨
+ * @version 1.0
  */
 public interface LabMemberService {
     /**
@@ -20,7 +20,8 @@ public interface LabMemberService {
      * @param grade     年级
      * @param majorName 专业名称
      * @param status    状态
-     * @return
+     * @param type    种数
+     * @return 成功返回1 失败-
      */
     public File statisticsMember(String dName, String grade, String majorName, String status, int type);
 
@@ -34,7 +35,7 @@ public interface LabMemberService {
      * @param majorName 专业名称
      * @param status    状态
      * @param labJob    职务
-     * @return
+     * @return 成功1 失败0
      */
     public List<Member> findMembers(String stuName, String grade, String telephone, String dName, String majorName,
                                     String status, String labJob);
@@ -42,14 +43,14 @@ public interface LabMemberService {
     /**
      * 修改成员
      *
-     * @param member
+     * @param member 成员对象
      * @return 成功1，失败0
      */
     public int updateMember(Member member);
 
     /**
      * 添加成员
-     *
+     *@param member 成员对象
      * @return 成功1，失败0
      */
     public int addMember(Member member);

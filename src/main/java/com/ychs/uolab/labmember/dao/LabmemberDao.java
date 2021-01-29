@@ -9,9 +9,12 @@ import java.io.File;
 import java.util.List;
 
 /**
- * @Author 杨佳雨
- * @Version 1.0
+ * 实验室成员Dao
+ * @author 杨佳雨
+ * @version 1.0
  */
+
+
 public interface LabmemberDao {
     /**
      * 成员统计并导出

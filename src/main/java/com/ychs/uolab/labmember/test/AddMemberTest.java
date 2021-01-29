@@ -10,8 +10,8 @@ import com.ychs.uolab.labmember.vo.Member;
 import java.util.Scanner;
 
 /**
- * @Author 杨佳雨
- * @Version 1.0
+ * @author 杨佳雨
+ * @version 1.0
  */
 public class AddMemberTest {
     public static void main(String[] args) {
