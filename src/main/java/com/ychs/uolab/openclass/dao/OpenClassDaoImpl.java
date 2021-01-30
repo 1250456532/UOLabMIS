@@ -29,7 +29,6 @@ public class OpenClassDaoImpl implements OpenClassDao {
         int count = 0;
 
         String sql = "INSERT INTO t_openclass values (?,?,?,?,?,?,?,?,?,?,?)";
-
         try {
             pstmt =conn.prepareStatement(sql);
             pstmt.setInt(1,openClass.getCid());
@@ -43,7 +42,6 @@ public class OpenClassDaoImpl implements OpenClassDao {
             pstmt.setInt(9,openClass.getCredit());
             pstmt.setInt(10,openClass.getNum());
             pstmt.setString(11,openClass.getRemark());
-
             count = pstmt.executeUpdate();
 
         } catch (SQLException e) {

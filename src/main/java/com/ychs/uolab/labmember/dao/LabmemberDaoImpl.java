@@ -115,6 +115,7 @@ public class LabmemberDaoImpl implements LabmemberDao {
         int count = 0;
 
         String sql = "insert into t_labmember values(?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+
         try {
             preparedStatement = conn.prepareStatement(sql);
             preparedStatement.setInt(1, member.getMemberId());
@@ -132,7 +133,6 @@ public class LabmemberDaoImpl implements LabmemberDao {
             preparedStatement.setString(13, member.getLabJob());
             preparedStatement.setString(14, member.getRemark());
             count = preparedStatement.executeUpdate();
-
         } catch (Exception e) {
             // TODO: handle exception
             e.printStackTrace();
